@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pacman;
+package entidades;
 
 /**
  *
@@ -11,7 +11,9 @@ package pacman;
  */
 public class entidade {
     private parOrdenado pos;
-    entidade(){}
+    public entidade(parOrdenado pos){
+        this.pos = pos;
+    }
     public parOrdenado getPos(){
         return pos;
     }

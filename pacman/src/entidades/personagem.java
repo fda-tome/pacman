@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pacman;
+package entidades;
 
 /**
  *
@@ -11,8 +11,13 @@ package pacman;
  */
 public abstract class personagem extends entidade{
     private parOrdenado vel;
-    personagem(parOrdenado vel){
+    personagem(parOrdenado pos, parOrdenado vel){
+        super(pos);
         this.vel = vel;
+    }
+    personagem(parOrdenado pos){
+        super(pos);
+        vel = new parOrdenado(0,0);
     }
     public parOrdenado getVel(){
         return vel;
